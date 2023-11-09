@@ -7,6 +7,8 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderMessageComponent } from '../components/header-message/header-message.component';
 import { ItemProductComponent } from '../components/item-product/item-product.component';
+import { CustomContentComponent } from '../components/custom-content/custom-content.component';
+import { CustomSelectComponent } from '../components/custom-select/custom-select.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ItemProductComponent } from '../components/item-product/item-product.co
   declarations: [
     HomePage,
     HeaderMessageComponent,
-    ItemProductComponent
+    ItemProductComponent,
+    CustomContentComponent,
+    CustomSelectComponent
   ]
 })
 export class HomePageModule {}
