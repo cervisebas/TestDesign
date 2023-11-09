@@ -1,0 +1,27 @@
+#header-message {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+    
+    background-color: #FFFFFF;
+    .message-text-bold {
+        font-weight: 700;
+        color: var(--ion-color-medium-shade);
+        font-size: 14px;
+    }
+    .privacity {
+        margin-top: 12px;
+        ion-text {
+            font-weight: 700;
+            color: var(--ion-color-medium-tint);
+            font-size: 12.5px;
+            a {
+                color: var(--ion-color-primary-tint);
+                text-decoration: underline;
+                outline: none;
+            }
+        }
+    }
+}

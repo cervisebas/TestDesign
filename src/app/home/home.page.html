@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header id="home-header">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="start" name="arrow-back-sharp" size="default"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-title>AÑADIR APLICACIÓN<br>DE PRODUCTO</ion-title>
+
+    <ion-avatar slot="end">
+      <img src="../../assets/avatar.svg" alt="Imagen de perfil.">
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content id="home-content" color="light" [fullscreen]="true">
+  <app-header-message></app-header-message>
+  <app-item-product></app-item-product>
 </ion-content>
