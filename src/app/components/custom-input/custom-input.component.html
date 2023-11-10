@@ -1,0 +1,20 @@
+<ion-item class="custom-input">
+  <ion-icon *ngIf="iconStart" slot="start" name="iconStart"></ion-icon>
+  <ion-input
+    #input
+    [type]="type"
+    [placeholder]="placeholder"
+  (ionInput)="onChange($event)"
+  ></ion-input>
+  <ion-icon *ngIf="iconEnd" slot="end" [name]="iconEnd"></ion-icon>
+</ion-item>
+
+<!--<ion-input
+  #input
+  class="custom-input"
+  fill="outline"
+  [type]="type"
+  [placeholder]="placeholder"
+  (ionInput)="onChange($event)">
+  <ion-icon *ngIf="icon" slot="end" name="icon"></ion-icon>
+</ion-input>-->

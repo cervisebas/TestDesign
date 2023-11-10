@@ -2,9 +2,14 @@
   class="custom-select always-flip"
   toggleIcon="chevron-down-outline"
   label="Selecciona"
+  label-placement="floating"
   interface="popover"
-  fill="outline">
-  <ion-select-option value="apples">Apples</ion-select-option>
-  <ion-select-option value="oranges">Oranges</ion-select-option>
-  <ion-select-option value="bananas">Bananas</ion-select-option>
+  fill="outline"
+  [value]="valSelect">
+  <ion-select-option
+    *ngFor="let item of options; index as i"
+    [value]="item?.value??item.name"
+    (click)="onChange(i)">
+    {{item.name}}
+  </ion-select-option>
 </ion-select>

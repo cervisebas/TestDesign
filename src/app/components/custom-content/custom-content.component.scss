@@ -3,9 +3,10 @@
     background-color: #FFFFFF;
     margin-left: 26px;
     margin-right: 26px;
+    margin-bottom: 24px;
 
     padding-top: 38px;
-    padding-bottom: 38px;
+    padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -34,10 +35,76 @@
             font-weight: bold;
         }
     }
+
+    ion-item-divider {
+        --padding-top: 0;
+        --padding-bottom: 12px;
+    }
     
+    /* ##### Dosis Input ##### */
+    .dosis-content {
+        display: flex;
+        flex-direction: row;
+        .dosis-div {
+            flex: 1;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            ion-text {
+                margin-left: 24px;
+            }
+        }
+    }
+
+    /* ##### Link Button ##### */
+    div.link-button {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 26px;
+        a {
+            color: var(--ion-color-primary-tint);
+            text-decoration: underline;
+            outline: none;
+        }
+    }
+
     /* ##### Title ##### */
     .title {
         font-size: 18px;
         font-weight: 400;
+        ion-icon {
+            margin-bottom: -4px;
+            font-size: 20px;
+        }
     }
+}
+
+#add-product {
+    width: calc(100% - 52px);
+    margin-left: 26px;
+    margin-right: 26px;
+    --border-radius: 22px;
+    --padding-top: 24px;
+    --padding-bottom: 24px;
+    font-size: 18px;
+    text-transform: initial;
+    --box-shadow: none;
+    ion-icon {
+        font-size: 42px;
+    }
+}
+
+#confirm-aplication {
+    margin-top: 30px;
+    margin-bottom: 56px;
+    width: calc(100% - 92px);
+    margin-left: 46px;
+    margin-right: 46px;
+    --border-radius: 16px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    font-size: 16px;
+    text-transform: initial;
+    --box-shadow: none;
 }

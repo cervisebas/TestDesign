@@ -2,5 +2,51 @@
   <div class="number"><h1>1</h1></div>
 
   <ion-text class="title" color="medium">Fabricante</ion-text>
-  <app-custom-select></app-custom-select>
+  <app-custom-select [options]="fabricOptions" [valSelect]="fabricVal"></app-custom-select>
+
+  <ion-text class="title" color="medium">Producto</ion-text>
+  <app-custom-input placeholder="Producto aplicado" [value]="productVal"></app-custom-input>
+
+  <ion-text class="title" color="medium">Ingrediente activo (opcional)</ion-text>
+  <app-custom-input placeholder="Suele encontrare en la ficha técnica" [value]="ingredientVal"></app-custom-input>
+
+  <app-custom-divider></app-custom-divider>
+
+  <ion-text class="title" color="medium">Problema atendido</ion-text>
+  <app-custom-select [options]="problemOptions" [valSelect]="problemVal"></app-custom-select>
+
+  <ion-text class="title" color="medium">Nombre del problema</ion-text>
+  <app-custom-select [options]="problemNameOptions" [valSelect]="problemNameVal"></app-custom-select>
+  <div class="link-button">
+    <a href="#">Añadir problema</a>
+  </div>
+
+  <app-custom-divider></app-custom-divider>
+  
+  <ion-text class="title" color="medium">Fecha de aplicación</ion-text>
+  <app-custom-input placeholder="Elije la fecha de aplicación" type="date" iconEnd="calendar-number-outline" [value]="dateOfAplicationVal"></app-custom-input>
+  
+  <ion-text class="title" color="medium">Dosis</ion-text>
+  <div class="dosis-content">
+    <div class="dosis-div">
+      <app-custom-input placeholder="Por hectárea" [value]="dosisVal"></app-custom-input>
+    </div>
+    <div class="dosis-div">
+      <ion-text class="title" color="medium">L /Ha</ion-text>
+    </div>
+  </div>
+
+  <app-custom-divider></app-custom-divider>
+
+  <ion-text class="title" color="medium">Precio por kilo litro <ion-icon color="primary" name="information-circle"></ion-icon></ion-text>
+  <app-custom-input placeholder="Gasto promedio de la aplicación" [value]="consumeVal"></app-custom-input>
 </div>
+
+<ion-button id="add-product" fill="solid" color="success">
+  Añadir producto
+  <ion-icon slot="end" name="add-circle"></ion-icon>
+</ion-button>
+
+<ion-button id="confirm-aplication" fill="solid" color="success">
+  Confirmar aplicación
+</ion-button>
